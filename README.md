@@ -109,7 +109,7 @@ These modules are included with Python and do not need separate installation. Th
 This tree follows the main project structure. Local runtime artifacts such as ".pytest_cache/", "__pycache__/" and "venv/" are not intended to be committed to GitHub.
 
 5. Project Structure
-
+```text
 Lead-management-system/
 │
 ├── data/
@@ -208,6 +208,8 @@ Lead-management-system/
 ├── .gitignore
 ├── README.md
 └── requirements.txt
+```
+
 
 Note: Runtime artifacts such as ".env", "venv/", "__pycache__/", and ".pytest_cache/" are excluded from version control.
 
