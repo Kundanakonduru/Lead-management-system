@@ -609,18 +609,22 @@ The validator also reported the expected injected territory, consent and stage-h
 
 # 17.3 Database Integrity Verification
 
-The database verification script confirmed that all 15 original CSV/MySQL table counts matched.
+The database verification script was run after the latest master-data generation and confirmed that all 15 original CSV/MySQL table counts matched.
 
 Verification| Result
 MySQL connection| PASS
-Tables checked| 15
+Tables checked| 15/15
 Total original CSV records| 235,863
 Total MySQL records| 235,863
+Record-count difference| 0
 Table-count comparison| PASS
 
-The verified schema contains 22 foreign-key relationships.
+Command used:
+python scripts/verify_database.py
 
-**Note: The database count comparison was performed on the original dataset. The master generator was subsequently executed again and the V2 validator passed. The database verification should be rerun if fresh confirmation of CSV/MySQL count equality is required after regeneration.**
+All 15 table-level record counts matched successfully, confirming consistency between the original generated CSV dataset and the corresponding MySQL tables at the time of verification.
+
+The verified schema contains 22 foreign-key relationships.
 
 # 17.4 V2 Pipeline Validation
 
