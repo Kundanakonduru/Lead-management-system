@@ -363,7 +363,7 @@ DB_HOST=localhost
 DB_PORT=3306
 DB_USER=your_mysql_username
 DB_PASSWORD=your_mysql_password
-DB_NAME=lead_management
+DB_NAME=lead_management_db
 
 Use the exact variable names referenced in your database connection code if they differ from this example.
 
