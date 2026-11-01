@@ -108,6 +108,8 @@ These modules are included with Python and do not need separate installation. Th
 
 This tree follows the main project structure. Local runtime artifacts such as ".pytest_cache/", "__pycache__/" and "venv/" are not intended to be committed to GitHub.
 
+5. Project Structure
+
 Lead-management-system/
 │
 ├── data/
@@ -148,9 +150,19 @@ Lead-management-system/
 │   │
 │   ├── staging/
 │   │   ├── generated_v2/
-│   │   ├── generated_v2_backup/
-│   │   ├── ground_truth_v2/
-│   │   └── ground_truth_v2_backup/
+│   │   │   ├── activities.csv
+│   │   │   ├── consents.csv
+│   │   │   ├── data_quality_issues.csv
+│   │   │   ├── generation_summary.json
+│   │   │   ├── leads.csv
+│   │   │   ├── opportunities.csv
+│   │   │   ├── opportunity_evidence.csv
+│   │   │   ├── score_rules.csv
+│   │   │   ├── stage_history.csv
+│   │   │   └── tasks.csv
+│   │   │
+│   │   └── ground_truth_v2/
+│   │       └── ground_truth.json
 │   │
 │   └── validation_report.json
 │
@@ -183,8 +195,8 @@ Lead-management-system/
 │   │
 │   ├── generators/
 │   │   ├── generate_data.py
-│   │   ├── generate_events_backup.py
-│   │   └── generate_events.py
+│   │   ├── generate_events.py
+│   │   └── generate_events_backup.py
 │   │
 │   └── validation/
 │       ├── detect_duplicates.py
@@ -193,11 +205,11 @@ Lead-management-system/
 ├── tests/
 │   └── test_pipeline.py
 │
-├── .env
 ├── .gitignore
 ├── README.md
-├── remaining_errors.txt
 └── requirements.txt
+
+Note: Runtime artifacts such as ".env", "venv/", "__pycache__/", and ".pytest_cache/" are excluded from version control.
 
 The tree is intended to show the main project files and directories, not every generated output or local runtime artifact.
 
