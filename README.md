@@ -1,6 +1,6 @@
 # Lead Management System
 
-A Python- and MySQL-based Lead Management System developed as part of the YottaFlex AI Challenge.
+A Python and MySQL-based Lead Management System developed as part of the YottaFlex AI Challenge.
 The project generates synthetic CRM data, calculates transparent lead scores, qualifies leads, creates follow-up tasks and opportunities, preserves event history, detects known data-quality exceptions, and produces business evaluation metrics.
 
 «**Dataset note:** The project contains an original master-data/MySQL dataset and a separate V2 event-generation pipeline. The V2 generator writes to "data/staging/" and does not modify the original "data/generated/" files or the existing MySQL database.»
