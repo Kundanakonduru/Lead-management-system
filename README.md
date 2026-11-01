@@ -330,10 +330,8 @@ The validation and anomaly-analysis processes check these cases and report detec
 
 # 11.1 Clone the Repository
 
-git clone <repository-url>
+git clone https://github.com/Kundanakonduru/Lead-management-system.git
 cd Lead-management-system
-
-Replace "<repository-url>" with the actual Git repository URL.
 
 # 11.2 Create a Virtual Environment
 
