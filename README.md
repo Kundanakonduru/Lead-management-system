@@ -108,7 +108,7 @@ These modules are included with Python and do not need separate installation. Th
 
 This tree follows the main project structure. Local runtime artifacts such as ".pytest_cache/", "__pycache__/" and "venv/" are not intended to be committed to GitHub.
 
-lead-management-system/
+Lead-management-system/
 │
 ├── data/
 │   ├── analytics/
@@ -143,7 +143,6 @@ lead-management-system/
 │   │   ├── tasks.csv
 │   │   └── territories.csv
 │   │
-│   ├── generated_backup_2026.../
 │   ├── ground_truth/
 │   │   └── ground_truth.json
 │   │
