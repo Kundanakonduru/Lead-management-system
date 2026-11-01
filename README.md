@@ -436,7 +436,7 @@ The project uses MySQL for relational data storage.
 
 Open MySQL Workbench and create the database:
 
-CREATE DATABASE lead_management;
+CREATE DATABASE lead_management_db;
 
 Use the database name configured in your environment variables.
 
