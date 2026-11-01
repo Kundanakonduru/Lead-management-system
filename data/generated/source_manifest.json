@@ -1,0 +1,12 @@
+{
+    "seed": 20261022,
+    "companies": 5000,
+    "contacts": 10000,
+    "leads": 20000,
+    "campaigns": 20,
+    "territories": 8,
+    "products": 3,
+    "sales_reps": 16,
+    "generator_version": "1.0",
+    "generated_at": "2026-10-30T12:00:00"
+}

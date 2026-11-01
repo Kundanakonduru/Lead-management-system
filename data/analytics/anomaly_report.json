@@ -1,0 +1,57 @@
+{
+    "summary": {
+        "overall_status": "PASS",
+        "ground_truth_anomalies": 5,
+        "detected_in_data": 5,
+        "not_detected": 0,
+        "detection_rate_percent": 100.0,
+        "failed_issue_ids": []
+    },
+    "results": [
+        {
+            "issue_id": "EX-001",
+            "issue_type": "OPTED_OUT_CONTACTED",
+            "lead_id": "LEAD-2026-000011",
+            "expected_decision": "BLOCK_CONTACT",
+            "detected_in_data": true,
+            "verification_status": "PASS",
+            "evidence": "EMAIL_SENT (ACT-LEAD-2026-000011-EX001) occurred at 2025-01-18 11:00:00 after EMAIL_MARKETING revocation at 2025-01-17 11:00:00."
+        },
+        {
+            "issue_id": "EX-002",
+            "issue_type": "POST_CONVERSION_ACTIVITY",
+            "lead_id": "LEAD-2026-000624",
+            "expected_decision": "EXCLUDE_FROM_SCORE",
+            "detected_in_data": true,
+            "verification_status": "PASS",
+            "evidence": "Activity ACT-LEAD-2026-000624-EX002 (DEMO_COMPLETED) occurred at 2025-11-28 14:00:00 after opportunity OPP-2026-000001 was closed at 2025-11-27 14:00:00."
+        },
+        {
+            "issue_id": "EX-003",
+            "issue_type": "OUTSIDE_TERRITORY_ASSIGNMENT",
+            "lead_id": "LEAD-2026-000101",
+            "expected_decision": "REJECT_ASSIGNMENT",
+            "detected_in_data": true,
+            "verification_status": "PASS",
+            "evidence": "Lead territory TER-000001 differs from representative REP-000002 territory TER-000002."
+        },
+        {
+            "issue_id": "EX-004",
+            "issue_type": "DUPLICATE_OPPORTUNITY",
+            "lead_id": "LEAD-2026-000929",
+            "expected_decision": "REJECT_DUPLICATE",
+            "detected_in_data": true,
+            "verification_status": "PASS",
+            "evidence": "Duplicate opportunity creation attempt was rejected and audited. Existing opportunity: OPP-2026-000002. Lead: LEAD-2026-000929. Audit status: REJECTED. Reason: Duplicate opportunity rejected by unique lead_id constraint."
+        },
+        {
+            "issue_id": "EX-005",
+            "issue_type": "STAGE_HISTORY_GAP",
+            "lead_id": "LEAD-2026-005458",
+            "expected_decision": "FLAG_MISSING_TRANSITION",
+            "detected_in_data": true,
+            "verification_status": "PASS",
+            "evidence": "Missing expected stage(s): NEEDS_ANALYSIS"
+        }
+    ]
+}

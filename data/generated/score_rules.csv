@@ -1,0 +1,11 @@
+rule_id,rule_name,feature_type,feature_name,weight,effective_from,effective_to,active
+RULE-0001,company_size,FIT,company_size,0.4,2026-01-01 00:00:00,,1
+RULE-0002,industry_match,FIT,industry_match,0.35,2026-01-01 00:00:00,,1
+RULE-0003,employee_count,FIT,employee_count,0.25,2026-01-01 00:00:00,,1
+RULE-0004,demo_request,INTENT,demo_request,0.5,2026-01-01 00:00:00,,1
+RULE-0005,form_submission,INTENT,form_submission,0.3,2026-01-01 00:00:00,,1
+RULE-0006,high_intent_page,INTENT,high_intent_page,0.2,2026-01-01 00:00:00,,1
+RULE-0007,email_open,ENGAGEMENT,email_open,0.25,2026-01-01 00:00:00,,1
+RULE-0008,email_click,ENGAGEMENT,email_click,0.35,2026-01-01 00:00:00,,1
+RULE-0009,website_visit,ENGAGEMENT,website_visit,0.2,2026-01-01 00:00:00,,1
+RULE-0010,meeting,ENGAGEMENT,meeting,0.2,2026-01-01 00:00:00,,1

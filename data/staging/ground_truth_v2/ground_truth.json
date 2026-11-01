@@ -1,0 +1,33 @@
+[
+  {
+    "expected_decision": "BLOCK_CONTACT",
+    "issue_id": "EX-001",
+    "issue_type": "OPTED_OUT_CONTACTED",
+    "lead_id": "LEAD-2026-000011"
+  },
+  {
+    "expected_decision": "EXCLUDE_FROM_SCORE",
+    "issue_id": "EX-002",
+    "issue_type": "POST_CONVERSION_ACTIVITY",
+    "lead_id": "LEAD-2026-000624"
+  },
+  {
+    "expected_decision": "REJECT_ASSIGNMENT",
+    "issue_id": "EX-003",
+    "issue_type": "OUTSIDE_TERRITORY_ASSIGNMENT",
+    "lead_id": "LEAD-2026-000101"
+  },
+  {
+    "expected_decision": "REJECT_DUPLICATE",
+    "issue_id": "EX-004",
+    "issue_type": "DUPLICATE_OPPORTUNITY",
+    "lead_id": "LEAD-2026-000929"
+  },
+  {
+    "expected_decision": "FLAG_MISSING_TRANSITION",
+    "issue_id": "EX-005",
+    "issue_type": "STAGE_HISTORY_GAP",
+    "lead_id": "LEAD-2026-005458",
+    "opportunity_id": "OPP-2026-000003"
+  }
+]

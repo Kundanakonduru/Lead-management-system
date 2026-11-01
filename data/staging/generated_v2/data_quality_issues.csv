@@ -1,0 +1,2 @@
+issue_id,issue_type,lead_id,existing_opportunity_id,attempted_action,issue_status,reason,recorded_at
+EX-004,DUPLICATE_OPPORTUNITY,LEAD-2026-000929,OPP-2026-000002,CREATE_DUPLICATE_OPPORTUNITY,REJECTED,Duplicate opportunity rejected by unique lead_id constraint,2026-10-30 12:00:00

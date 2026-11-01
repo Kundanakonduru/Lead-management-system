@@ -1,0 +1,70 @@
+{
+  "as_of": "2026-10-30 12:00:00",
+  "counts": {
+    "activities": 85755,
+    "closed": 3000,
+    "consents": 60000,
+    "data_quality_issues": 1,
+    "ground_truth_cases": 5,
+    "leads": 20000,
+    "lost": 1023,
+    "open": 1333,
+    "opportunities": 3000,
+    "opportunity_evidence": 3000,
+    "qualified_leads": 3000,
+    "stage_history": 8999,
+    "stale": 15667,
+    "tasks": 19248,
+    "won": 1977
+  },
+  "ground_truth_directory": "data\\staging\\ground_truth_v2",
+  "outcome_rule": {
+    "description": "WON when annual revenue is at least 20 times the product base price; otherwise LOST.",
+    "limitation": "Synthetic financial-capacity proxy, not verified purchase or actual sales evidence.",
+    "revenue_multiple": 20,
+    "rule_id": "OUTCOME-001",
+    "source": "SYNTHETIC_COMPANY_FINANCIAL_DATA"
+  },
+  "output_directory": "data\\staging\\generated_v2",
+  "overall_weights": {
+    "ENGAGEMENT": 0.3,
+    "FIT": 0.35,
+    "INTENT": 0.35
+  },
+  "product_industry_assumptions": {
+    "Business Analytics": [
+      "Education",
+      "Finance",
+      "Healthcare",
+      "Manufacturing",
+      "Retail"
+    ],
+    "CRM Software": [
+      "Education",
+      "Finance",
+      "Healthcare",
+      "IT",
+      "Retail"
+    ],
+    "Cloud Management": [
+      "Finance",
+      "Healthcare",
+      "IT",
+      "Manufacturing",
+      "Telecommunications"
+    ]
+  },
+  "qualification_threshold": 60.0,
+  "rules": {
+    "amount": "product base value x company-size multiplier, capped at 1% of annual revenue when available; no floor overrides the cap",
+    "engagement": "25% email open + 35% email click + 20% website visit + 20% meeting",
+    "fit": "40% company size + 35% product-industry match + 25% employee-count suitability",
+    "ground_truth": "injected anomaly labels are separate and are not scoring inputs",
+    "intent": "50% demo request + 30% form submission + 20% PAGE_VIEW proxy",
+    "overall": "35% fit + 35% intent + 30% engagement",
+    "qualification": "top 3000 leads ranked by total_score; ties break by lead_id",
+    "staleness": "STALE when latest activity is at least 30 days old; CLOSED when an opportunity exists; remaining leads are OPEN",
+    "won": "WON when annual_revenue >= product_base_price * OUTCOME_REVENUE_MULTIPLE; otherwise LOST; independent of lead-score rank and marketing activity"
+  },
+  "seed": 20261022
+}

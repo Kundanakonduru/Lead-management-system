@@ -1,0 +1,7 @@
+{
+    "companies_checked": 5000,
+    "contacts_checked": 10000,
+    "leads_checked": 20000,
+    "duplicate_cases_found": 39,
+    "duplicate_audit_file": "data\\analytics\\duplicate_audit.csv"
+}

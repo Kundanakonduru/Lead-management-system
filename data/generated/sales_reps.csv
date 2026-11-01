@@ -1,0 +1,17 @@
+sales_rep_id,rep_name,email,territory_id,active,created_at
+REP-000001,Sales Representative 001,rep001@example.com,TER-000001,1,2026-10-30 12:00:00
+REP-000002,Sales Representative 002,rep002@example.com,TER-000002,1,2026-10-30 12:00:00
+REP-000003,Sales Representative 003,rep003@example.com,TER-000003,1,2026-10-30 12:00:00
+REP-000004,Sales Representative 004,rep004@example.com,TER-000004,1,2026-10-30 12:00:00
+REP-000005,Sales Representative 005,rep005@example.com,TER-000005,1,2026-10-30 12:00:00
+REP-000006,Sales Representative 006,rep006@example.com,TER-000006,1,2026-10-30 12:00:00
+REP-000007,Sales Representative 007,rep007@example.com,TER-000007,1,2026-10-30 12:00:00
+REP-000008,Sales Representative 008,rep008@example.com,TER-000008,1,2026-10-30 12:00:00
+REP-000009,Sales Representative 009,rep009@example.com,TER-000001,1,2026-10-30 12:00:00
+REP-000010,Sales Representative 010,rep010@example.com,TER-000002,1,2026-10-30 12:00:00
+REP-000011,Sales Representative 011,rep011@example.com,TER-000003,1,2026-10-30 12:00:00
+REP-000012,Sales Representative 012,rep012@example.com,TER-000004,1,2026-10-30 12:00:00
+REP-000013,Sales Representative 013,rep013@example.com,TER-000005,1,2026-10-30 12:00:00
+REP-000014,Sales Representative 014,rep014@example.com,TER-000006,1,2026-10-30 12:00:00
+REP-000015,Sales Representative 015,rep015@example.com,TER-000007,1,2026-10-30 12:00:00
+REP-000016,Sales Representative 016,rep016@example.com,TER-000008,1,2026-10-30 12:00:00

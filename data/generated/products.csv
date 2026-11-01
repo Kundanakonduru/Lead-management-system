@@ -1,0 +1,4 @@
+product_id,product_name,category,active
+PROD-000001,Business Analytics,Analytics,1
+PROD-000002,Cloud Management,Cloud,1
+PROD-000003,CRM Software,Business Software,1

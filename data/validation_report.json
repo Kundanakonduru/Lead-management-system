@@ -1,0 +1,33 @@
+{
+    "status": "PASS",
+    "metrics": {
+        "companies": 5000,
+        "contacts": 10000,
+        "campaigns": 20,
+        "territories": 8,
+        "products": 3,
+        "sales_reps": 16,
+        "sales_rep_products": 48,
+        "leads": 20000,
+        "consents": 60000,
+        "activities": 89537,
+        "score_rules": 10,
+        "tasks": 19222,
+        "opportunities": 3000,
+        "stage_history": 8999,
+        "territory_violations": 0,
+        "consent_violations": 498,
+        "won": 1604,
+        "lost": 1396,
+        "funnel_reconciles": true,
+        "ground_truth_cases": 5
+    },
+    "errors": [],
+    "warnings": [
+        "Intentional territory anomaly is labelled.",
+        "Intentional consent violation is labelled.",
+        "Post-conversion event is excluded from original score.",
+        "Duplicate opportunity attempt is represented in ground truth.",
+        "Stage-history gap is represented in ground truth."
+    ]
+}
